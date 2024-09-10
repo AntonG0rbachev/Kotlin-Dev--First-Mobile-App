@@ -2,6 +2,7 @@ package com.example.firstmobileapp
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,5 +20,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btn = findViewById<Button>(R.id.btnButton)
+        btn.setOnClickListener {
+            val et = findViewById<TextView>(R.id.etnput).text
+            if (et.isNotBlank()) {
+                findViewById<TextView>(R.id.tvinfo).text = et
+            }
+        }
+
     }
 }
