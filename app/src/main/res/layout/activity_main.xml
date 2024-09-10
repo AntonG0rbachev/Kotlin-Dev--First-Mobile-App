@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="172dp"
-        android:text="Пока ничего не введено"
+        android:text="@string/nothing_inputed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,11 +24,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:ems="10"
-        android:hint="Введите что-нибудь"
+        android:hint="@string/input_something"
         android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvinfo" />
+        app:layout_constraintTop_toBottomOf="@+id/tvinfo"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/btnButton"
@@ -37,7 +40,7 @@
         android:layout_marginStart="159dp"
         android:layout_marginTop="143dp"
         android:layout_marginEnd="161dp"
-        android:text="Кнопка"
+        android:text="@string/btnName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etnput" />
