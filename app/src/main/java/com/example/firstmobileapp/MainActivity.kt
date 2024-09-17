@@ -64,7 +64,9 @@ class MainActivity : AppCompatActivity() {
                 "/" -> {
                     (n1!! / n2!!).toString()
                 }
-
+                "\"\\uD83E\\uDD79\"" -> {
+                    "Hello Vova"
+                }
                 else -> ""
             }
 
