@@ -2,5 +2,5 @@
     <string name="app_name">FirstMobileApp</string>
     <string name="nothing_inputed">Пока ничего не введено</string>
     <string name="btnName">Кнопка</string>
-    <string name="input_something">Введите что-нибудь</string>
+    <string name="input_something">Введите число</string>
 </resources>
