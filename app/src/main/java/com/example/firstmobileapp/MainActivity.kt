@@ -48,6 +48,26 @@ class MainActivity : AppCompatActivity() {
                 et2.requestFocus()
             }
 
+            if ((n1 == null) or (n2 == null) or oper.isBlank())
+                return@setOnClickListener
+
+            findViewById<TextView>(R.id.tvinfo).text = when (oper) {
+                "*" -> {
+                    (n1!! * n2!!).toString()
+                }
+                "+" -> {
+                    (n1!! + n2!!).toString()
+                }
+                "-" -> {
+                    (n1!! - n2!!).toString()
+                }
+                "/" -> {
+                    (n1!! / n2!!).toString()
+                }
+
+                else -> ""
+            }
+
         }
 
     }
