@@ -21,10 +21,33 @@ class MainActivity : AppCompatActivity() {
 
         val btn = findViewById<Button>(R.id.btnButton)
         btn.setOnClickListener {
-            val et = findViewById<TextView>(R.id.etnput2).text
-            if (et.isNotBlank()) {
-                findViewById<TextView>(R.id.tvinfo).text = et
+
+            val et1 = findViewById<TextView>(R.id.etnput1)
+            var n1: Float? = null
+            try {
+                n1 = et1.text.toString().toFloat()
+            } catch (nfe: NumberFormatException) {
+                et1.error = "Введите число"
+                et1.requestFocus()
             }
+
+            val etOP = findViewById<TextView>(R.id.etOperation)
+            var oper: String = etOP.text.toString()
+            if (oper.isBlank() or (oper.length > 1) or (!("+-*/").contains(oper))) {
+                etOP.error = "Укажите вверную операцию"
+                etOP.requestFocus()
+                oper = ""
+            }
+
+            val et2 = findViewById<TextView>(R.id.etnput2)
+            var n2: Float? = null
+            try {
+                n2 = et1.text.toString().toFloat()
+            } catch (nfe: NumberFormatException) {
+                et2.error = "Введите число"
+                et2.requestFocus()
+            }
+
         }
 
     }
