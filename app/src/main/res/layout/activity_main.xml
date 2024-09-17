@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/etnput1"
+        android:id="@+id/etnput2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/input_something"
-        android:inputType="text"
+        android:inputType="number|numberDecimal|numberSigned"
         android:minHeight="48dp"
         android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,23 +26,23 @@
         android:id="@+id/tvinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginBottom="72dp"
         android:rotationX="35"
         android:scaleX="3"
         android:scaleY="3"
         android:text="@string/nothing_inputed"
+        app:layout_constraintBottom_toTopOf="@+id/etnput1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/etnput2"
+        android:id="@+id/etnput1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/input_something"
-        android:inputType="text"
+        android:inputType="number|numberDecimal|numberSigned"
         android:minHeight="48dp"
         android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,21 +56,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="159dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="161dp"
         android:text="@string/btnName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etnput1" />
+        app:layout_constraintTop_toBottomOf="@+id/etnput2" />
 
     <EditText
         android:id="@+id/etOperation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="+-*/"
         android:inputType="text"
-        android:text="Name"
         tools:layout_editor_absoluteX="98dp"
         tools:layout_editor_absoluteY="335dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
