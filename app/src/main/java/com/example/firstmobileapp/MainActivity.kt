@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val btn = findViewById<Button>(R.id.btnButton)
         btn.setOnClickListener {
-            val et = findViewById<TextView>(R.id.etnput).text
+            val et = findViewById<TextView>(R.id.etnput1).text
             if (et.isNotBlank()) {
                 findViewById<TextView>(R.id.tvinfo).text = et
             }
